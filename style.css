@@ -1,3 +1,22 @@
+/*** General Style ***/
+* {
+    background-image:url(assets/textures/fabric_plaid.png);
+    font-family: 'Museo', serif;
+}
+@font-face {
+    font-family: 'Museo';
+    src: url("assets/fonts/museo/museo-300-webfont.eot");
+    src: 
+    url("assets/fonts/museo/museo-300-webfont.woff") format("woff"),
+    url("assets/fonts/museo/museo-300-webfont.ttf") format("truetype"),
+    url("assets/fonts/museo/museo-300-webfont.svg#filename") format("svg");
+}
+/*Wrapper Style*/
+#wrapper {
+        width: 80%;
+        margin: 0 auto;
+}
+/******* Header Style *******/
 nav {
     display: flex;
     flex-flow:row wrap;
@@ -7,9 +26,37 @@ nav {
   .header-left, .header-right {
    
   }
+  /***** Carousel *****/
   #featured-project {
     width:80%;
   }
+  /* Posts Flexbox */
+  .posts {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	
+}
+
+.posts img {
+	margin: 1% 0;
+	width: 22%;
+	align-self: flex-start;
+}
+
+  /***** Button *****/
+  .button {
+    display:inline;
+    background-image:url(assets/textures/az_subtle.png); 
+    background-color:darkgray;
+    background-blend-mode: multiply;
+    padding:10px 100px;
+  }
+  a:link, a:visited  {
+    text-decoration: none;
+    color:white;
+  }
+  /******* Footer Section ******/
 footer {
     display:flex;
     justify-content:space-between
@@ -23,8 +70,14 @@ footer {
     flex-direction:row;
     justify-content: space-between;
 }
-#gallery {
+.footer-gallery {
+    border:solid 1px red;
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
+}
+.footer-gallery img {
+    margin: 2%;
+	width: 20%;
+	align-self: flex-start;
 }
