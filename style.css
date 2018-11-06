@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    
+  }
+  .header-left, .header-right {
+   
+  }
+  #featured-project {
+    width:80%;
+  }
+footer {
+    display:flex;
+    justify-content:space-between
+}
+.footer-left {
+    display:flex;
+    flex-flow: column nowrap;
+}
+#footer-nav {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#gallery {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+}
