@@ -82,8 +82,7 @@ nav {
 .posts img {
 	margin: 1% 0;
     width: 22%;
-    max-height: 120px;
-	align-self: flex-start;
+	align-self: center;
 }
 
   /***** Button *****/
