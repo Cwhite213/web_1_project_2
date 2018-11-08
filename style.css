@@ -11,6 +11,9 @@
     url("assets/fonts/museo/museo-300-webfont.ttf") format("truetype"),
     url("assets/fonts/museo/museo-300-webfont.svg#filename") format("svg");
 }
+em {
+    font-size: 8pt;
+}
 /*Wrapper Style*/
 #wrapper {
         width: 80%;
@@ -22,25 +25,49 @@ nav {
     flex-flow:row wrap;
     justify-content: space-between;
     margin:auto; 
+    align-items:flex-start;
   }
-  .header-left, .header-right {
-      margin: auto 0px;
-   
+  .header-left {
+    display: flex;
+    flex-flow:row wrap;
+    align-content: space-between;
+    margin:auto; 
+    align-items:center;
+  }
+  .header-right img {
+      max-height: 20px;
+      margin-left: 1px; 
   }
   /***** Carousel *****/
   .carousel {
-      border: solid red 1px;
+      border: solid white 10px;
       display:block;
       position:relative;
       margin:auto;
-      width: 100%;
-      height:400px;
+    
   }
-  .carousel img, .carousel h5 {
+  #arrow-left, #arrow-right {
       position: absolute;
+      top: 40%;
+      width: 5%;
+      background: none;
+  }
+  #arrow-left {
+      left:-2.8%;
+  }
+  #arrow-right {
+        right: -2.8%;
   }
   #featured-project {
-    width:80%;
+    width:100%;
+  }
+  .carousel h5 {
+      text-align: right;
+      display: block;
+      padding-right: 4%;
+      background-color: slategray;
+      
+
   }
   /* Posts Flexbox */
   .posts {
@@ -52,35 +79,61 @@ nav {
 
 .posts img {
 	margin: 1% 0;
-	width: 22%;
+    width: 22%;
+    max-height: 120px;
 	align-self: flex-start;
 }
 
   /***** Button *****/
   .button {
-    display:inline;
-    background-image:url(assets/textures/az_subtle.png); 
-    background-color:darkgray;
-    background-blend-mode: multiply;
-    padding:10px 100px;
+        position:relative;
+        display:inline-block;
+        margin-left: 30%;
+        margin-right: 30%;
+        background-image:url(assets/textures/az_subtle.png); 
+        background-color:darkgray;
+        background-blend-mode: multiply;
+        padding:1% 8%; 
   }
   a:link, a:visited  {
     text-decoration: none;
     color:white;
   }
+  /* Tweet */
+  .tweet {
+      display: flex;
+      flex-direction:row;
+      align-items:center;
+      text-align:center;
+      margin-left: 10%;
+      margin-right: 10%;
+      background-color: slategray;
+  }
+  .tweet img {
+      height: 20px;
+      padding-left:5%;
+  }
   /******* Footer Section ******/
 footer {
     display:flex;
-    justify-content:space-between
+    justify-content:space-between;
+    background-image:url(assets/textures/az_subtle.png); 
+    background-color:darkgray;
+    background-blend-mode: multiply;
+    border: solid blue 3px;
 }
 .footer-left {
     display:flex;
     flex-flow: column nowrap;
+    padding: 10px;
 }
 #footer-nav {
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+}
+.footer-center, .footer-right {
+    padding: 10px;
 }
 .footer-gallery {
     border:solid 1px red;
