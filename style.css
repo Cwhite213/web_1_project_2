@@ -1,5 +1,5 @@
 /*** General Style ***/
-* {
+body {
     background-image:url(assets/textures/fabric_plaid.png);
     font-family: 'Museo', serif;
 }
@@ -22,17 +22,16 @@ em {
 /******* Header Style *******/
 nav {
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:row nowrap;
     justify-content: space-between;
-    margin:auto; 
     align-items:flex-start;
   }
   .header-left {
-    display: flex;
-    flex-flow:row wrap;
-    align-content: space-between;
-    margin:auto; 
-    align-items:center;
+        width: 70%;
+        display: flex;
+        flex-flow:row wrap;
+        align-content: space-between;
+        align-items:center;
   }
   .header-right img {
       max-height: 20px;
@@ -61,13 +60,16 @@ nav {
   #featured-project {
     width:100%;
   }
-  .carousel h5 {
+  .carousel div {
       text-align: right;
-      display: block;
       padding-right: 4%;
       background-color: slategray;
-      
-
+      padding:10px 3px;
+  }
+  .carousel h5 {
+    text-align: right;
+    margin:0;
+    
   }
   /* Posts Flexbox */
   .posts {
@@ -120,7 +122,8 @@ footer {
     background-image:url(assets/textures/az_subtle.png); 
     background-color:darkgray;
     background-blend-mode: multiply;
-    border: solid blue 3px;
+    width: 100%;
+    margin: 0;
 }
 .footer-left {
     display:flex;
@@ -136,7 +139,6 @@ footer {
     padding: 10px;
 }
 .footer-gallery {
-    border:solid 1px red;
     display:flex;
     flex-flow:row wrap;
     justify-content: space-between;
